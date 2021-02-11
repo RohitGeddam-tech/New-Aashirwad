@@ -1,0 +1,81 @@
+/*Offer page starts*/
+
+.sizpage{
+    width: 100%;
+    height: 620px;
+    background: #EBEBEB;
+}
+  
+
+.intr{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.intr h2{
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #092F57;
+}
+  
+.intr img{
+    margin-top: 60px;
+    margin-left: 24px;
+    margin-bottom: 14px;
+}
+
+
+.deskoffersmobpic{
+    display: inline-block;
+    position: relative;
+    margin-left: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 205px;
+    height: 100%;
+    border: 2px solid white;
+    background: white;
+}
+
+.deskoffersmobpic img{
+    width: 200px;
+    height: 170px;
+}
+
+.deskoffersmobpic p{
+    font-size: 14px;
+    width:auto;
+}
+
+.deskoffersmobpic h3{
+    font-size: 18px;
+    color: #119ef0;
+    margin-bottom: 0 !important;
+}
+
+.deskoffersmobpic h4{
+    font-size: 18px;
+    margin-top: 8px !important;
+}
+
+
+.boxslick{
+    width: 85%;
+    height: 70%;
+    margin: auto;
+    margin-top: 5%;
+    margin-right: 30px;
+}
+
+/*mob view starts*/
+
+
+/*mob view ends*/
+
+/*Offers page ends*/
