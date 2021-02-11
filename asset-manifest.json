@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/New-Aashirwad/static/css/main.d4625550.chunk.css",
+    "main.js": "/New-Aashirwad/static/js/main.b0155f00.chunk.js",
+    "main.js.map": "/New-Aashirwad/static/js/main.b0155f00.chunk.js.map",
+    "runtime-main.js": "/New-Aashirwad/static/js/runtime-main.b1ced7ff.js",
+    "runtime-main.js.map": "/New-Aashirwad/static/js/runtime-main.b1ced7ff.js.map",
+    "static/css/2.d82ffdc3.chunk.css": "/New-Aashirwad/static/css/2.d82ffdc3.chunk.css",
+    "static/js/2.ebe3be3d.chunk.js": "/New-Aashirwad/static/js/2.ebe3be3d.chunk.js",
+    "static/js/2.ebe3be3d.chunk.js.map": "/New-Aashirwad/static/js/2.ebe3be3d.chunk.js.map",
+    "static/js/3.438d9c1a.chunk.js": "/New-Aashirwad/static/js/3.438d9c1a.chunk.js",
+    "static/js/3.438d9c1a.chunk.js.map": "/New-Aashirwad/static/js/3.438d9c1a.chunk.js.map",
+    "index.html": "/New-Aashirwad/index.html",
+    "static/css/2.d82ffdc3.chunk.css.map": "/New-Aashirwad/static/css/2.d82ffdc3.chunk.css.map",
+    "static/css/main.d4625550.chunk.css.map": "/New-Aashirwad/static/css/main.d4625550.chunk.css.map",
+    "static/js/2.ebe3be3d.chunk.js.LICENSE.txt": "/New-Aashirwad/static/js/2.ebe3be3d.chunk.js.LICENSE.txt",
+    "static/media/cover1.e9e80845.jpg": "/New-Aashirwad/static/media/cover1.e9e80845.jpg",
+    "static/media/cover2.dea2ddd5.jpg": "/New-Aashirwad/static/media/cover2.dea2ddd5.jpg",
+    "static/media/location1.8fbd6c7f.jpg": "/New-Aashirwad/static/media/location1.8fbd6c7f.jpg",
+    "static/media/offers.b540ba6d.jpg": "/New-Aashirwad/static/media/offers.b540ba6d.jpg",
+    "static/media/offers2.0cf2d5ed.jpg": "/New-Aashirwad/static/media/offers2.0cf2d5ed.jpg",
+    "static/media/slick-theme.css": "/New-Aashirwad/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1ced7ff.js",
+    "static/css/2.d82ffdc3.chunk.css",
+    "static/js/2.ebe3be3d.chunk.js",
+    "static/css/main.d4625550.chunk.css",
+    "static/js/main.b0155f00.chunk.js"
+  ]
+}
