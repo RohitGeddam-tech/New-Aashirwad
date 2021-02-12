@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import scrn from './Photos/offers2.jpg';
 
+
 export default class Responsive extends Component {
     render() {
       var settings = {
@@ -32,7 +33,7 @@ export default class Responsive extends Component {
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 560,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -49,7 +50,7 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnread'>Book Now</a>
+                    <a className='ui button btnrea'>Book Now</a>
                 </div>
             </div>
             <div>
@@ -58,7 +59,7 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnread'>Book Now</a>
+                    <a className='ui button btnrea'>Book Now</a>
                 </div>
             </div>
             <div>
@@ -67,7 +68,7 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnread'>Book Now</a>
+                    <a className='ui button btnrea'>Book Now</a>
                 </div>
             </div>
             <div className='lastboxslick'>
@@ -76,7 +77,16 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnread'>Book Now</a>
+                    <a className='ui button btnrea'>Book Now</a>
+                </div>
+            </div>
+            <div className='lastboxslick'>
+                <div className='deskoffersmobpic'>
+                    <img src={scrn}/>
+                    <h3>Test Name</h3>
+                    <h4>Rs.600</h4>
+                    <p>Kristy is an art director living in New York.</p>
+                    <a className='ui button btnrea'>Book Now</a>
                 </div>
             </div>
           </Slider>

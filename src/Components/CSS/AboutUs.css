@@ -1,12 +1,12 @@
 /*AboutUs starts*/
 
   .firstus{
-    width: 100%;
-    height: 520px;  
-    margin-bottom: 35px;
+    width: 85%;
+    height: 550px;  
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: auto;
   }
 
   .imgbox{
@@ -14,26 +14,26 @@
     align-items: center;
     justify-content: center;
     height: 400px;
-    width: 350px;
+    width: 35%;
   }
 
   .boximg{
-    height: 300px;
-    width: 90%;
+    height: 350px;
+    width: 350px;
     border-radius: 5px;
   }
 
   .contentbox{
-    width: 40%;
-    height: 75%;
-    margin-left: 70px;
+    width: 60%;
+    height: 90%;
+    margin-left: 10%;
     display: flex;
     flex-flow: column;
   }
 
   h3.h{
+    padding-top: 30px;
     text-align: start;
-    padding-top: 15px;
     font-size: 30px;
     margin-bottom: 30px;
   }
@@ -41,11 +41,16 @@
   .p{
     text-align: start;
     font-size: 20px;
-    margin-bottom: 20%;
+    color: #7B7F8C;
+  }
+
+  .btnbox{
+    margin-top: 3%;
   }
 
   .btnread{
-    width: 200px;
+    margin-top: 15%;
+    width: 150px;
     color: #fff;
     background: #0c4480;
   }
@@ -97,7 +102,7 @@
 
   p.mobp{
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     color: grey;
   }
 
@@ -109,6 +114,8 @@
     position: relative;
     display: none;
   }
+
+
 
   /* Mobile aboutus ends*/
 

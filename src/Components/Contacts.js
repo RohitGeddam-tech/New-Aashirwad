@@ -48,8 +48,8 @@ const Desksecond = () => {
                 <img className='sheetimg' src={location} />
             </div>
             <div className='contentsheet'>
-                <a href='tel:++912226711340' className='aspan'><span class="theheader">+91 22 2671 1340</span></a>
-                <a href='mailto:contact@aashirwadlabs.com' className='spana'><span class="theheader">contact@aashirwadlabs.com</span></a>
+                <a href='tel:++912226711340' className='theheader'><span class="theheader">+91 22 2671 1340</span></a>
+                <a href='mailto:contact@aashirwadlabs.com' className='theheader'><span class="theheader">contact@aashirwadlabs.com</span></a>
                 <p class="theheader">Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75</p>
             </div>
         </div>

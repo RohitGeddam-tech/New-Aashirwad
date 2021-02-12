@@ -4,7 +4,8 @@
 .footerbox{
     width: 100%;
     background: #EBEBEB;
-    height: fit-content;
+    height: 200px;
+    border: 2px solid blue;
 }
 
 .insidefooter{
@@ -16,6 +17,7 @@
 }
 
 .firstrectangle{
+    margin-top: 15px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -46,10 +48,9 @@
 }
 
 .midline{
-    box-sizing: border-box;
-    border: 0.2px solid  #092F57;
+    border: 0.2px solid black;
     width: 100%;
-    margin-top: 7px;
+    height: 0.3px;
 }
 
 .secondrectangle{
@@ -63,7 +64,6 @@
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
-    padding-top: 20px;
 }
 
 .icon{
@@ -73,7 +73,7 @@
 .lastrectangle{
     width: 100%;
     height: 15px;
-    padding-top: 40px;
+    padding-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;

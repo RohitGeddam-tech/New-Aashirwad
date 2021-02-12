@@ -40,42 +40,41 @@
 }
 
 .mainsheet{
-    margin-top: 5%;
+    margin-top: 4%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
 .imgsheet{
-    width: 100%;
+    width: 66%;
     height: fit-content;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contentsheet{
-    width: 100%;
+    width: 85%;
     height: fit-content;
     display: flex;
     align-items: inherit;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .theheader{
     width: 30%;
     font-size: 18px;
-    text-align: center;
     color: #092F57;
+    text-align: center;
 }
-
+/* 
 .spana{
-    margin-left: 20%;
     text-align: center;
 }
 
 .aspan{
     margin-left: 30px;
-}
+} */
 
 /*mob view starts*/
 

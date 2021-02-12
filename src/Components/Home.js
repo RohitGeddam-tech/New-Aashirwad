@@ -23,6 +23,7 @@ const List = () => {
     )
 }
 
+
 const MobList = () => {
     return (
         <div className='backimg'>
@@ -63,12 +64,13 @@ const Home = () => {
     })
     return (
         <div className='firstpage'>
-            <div className='backimg'>
-                {isMobile ?
+            
+                {isMobile ? <div className='backimg'>
                     <img className='firstimg' src={cover2} />
+                    </div>
                     : <MobList />}
                 {isMobile ? <Mobile /> : <List />}
-            </div>
+            
         </div>
     )
 }
