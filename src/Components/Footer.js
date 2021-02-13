@@ -14,9 +14,9 @@ const Desktop = () => {
             <div className="midline"></div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>
-                    <i className="large facebook icon"></i>
-                    <i className="large instagram icon"></i>
-                    <i className="large linkedin icon"></i>
+                    <i className="big facebook icon"></i>
+                    <i className="big instagram icon"></i>
+                    <i className="big linkedin icon"></i>
                 </div>
             </div>
             <div className='lastrectangle'>
@@ -38,9 +38,9 @@ const Mobile = () => {
             </div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>
-                    <i className="large facebook icon"></i>
-                    <i className="large instagram icon"></i>
-                    <i className="large linkedin icon"></i>
+                    <i className="big facebook icon"></i>
+                    <i className="big instagram icon"></i>
+                    <i className="big linkedin icon"></i>
                 </div>
             </div>
             <div className='lastrectangle'>
