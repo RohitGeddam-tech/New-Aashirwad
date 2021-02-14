@@ -4,7 +4,6 @@
 
 .msheet{
     width: 100%;
-    height: 450px;
 }
 
 .introduct{
@@ -16,6 +15,15 @@
     justify-content: flex-end;
 }
 
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-style: bold;
+    width: 99%;
+}
 
 .atheader{
     display: flex;
@@ -44,6 +52,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 .imgsheet{
@@ -84,6 +93,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-bottom: 15px;
 }
 
 .imgmobsheet{
