@@ -5,18 +5,18 @@ const Desktop = () => {
     return(
         <div className='insidefooter'>
             <div className='firstrectangle'>
-                <h3 className='titlenames'>About Us</h3>
-                <h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3>
-                <h3 className='titlenames'>CONTACT US</h3>
-                <h3 className='titlenames'>PRIVACY POLICY</h3>
-                <h3 className='titlenames'>TERMS & CONDITIONS</h3>
+                <a><h3 className='titlenames'>About Us</h3></a>
+                <a><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></a>
+                <a><h3 className='titlenames'>CONTACT US</h3></a>
+                <a><h3 className='titlenames'>PRIVACY POLICY</h3></a>
+                <a><h3 className='titlenames'>TERMS & CONDITIONS</h3></a>
             </div>
             <div className="midline"></div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>
-                    <i className="big facebook icon"></i>
-                    <i className="big instagram icon"></i>
-                    <i className="big linkedin icon"></i>
+                    <a><i className="big facebook icon"></i></a>
+                    <a><i className="big instagram icon"></i></a>
+                    <a><i className="big linkedin icon"></i></a>
                 </div>
             </div>
             <div className='lastrectangle'>
@@ -30,17 +30,17 @@ const Mobile = () => {
     return(
         <div className='insidefooter'>
             <div className='firstmobrectangle'>
-                <h3 className='titlenames'>About Us</h3>
-                <h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3>
-                <h3 className='titlenames'>CONTACT US</h3>
-                <h3 className='titlenames'>PRIVACY POLICY</h3>
-                <h3 className='titlenames'>TERMS & CONDITIONS</h3>
+                <a><h3 className='titlenames'>About Us</h3></a>
+                <a><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></a>
+                <a><h3 className='titlenames'>CONTACT US</h3></a>
+                <a><h3 className='titlenames'>PRIVACY POLICY</h3></a>
+                <a><h3 className='titlenames'>TERMS & CONDITIONS</h3></a>
             </div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>
-                    <i className="big facebook icon"></i>
-                    <i className="big instagram icon"></i>
-                    <i className="big linkedin icon"></i>
+                    <a><i className="big facebook icon"></i></a>
+                    <a><i className="big instagram icon"></i></a>
+                    <a><i className="big linkedin icon"></i></a>
                 </div>
             </div>
             <div className='lastrectangle'>

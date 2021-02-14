@@ -15,7 +15,7 @@ const List = () => {
                         Contact Us
                     </a>
                     <div class="item mobbtn">
-                        <button class="ui button">BOOK AN APPOINTMENT</button>
+                        <a class="ui button">BOOK AN APPOINTMENT</a>
                     </div>
                 </div>    
             // </div>
@@ -40,7 +40,7 @@ const MobileList =()=>{
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Pathological Equipments</a>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Contact Us</a>
                 <div class="itembtn">
-                    <button class="ui button">BOOK AN APPOINTMENT</button>
+                    <a class="ui button">BOOK AN APPOINTMENT</a>
                 </div>
             </div>}
         </>
@@ -56,7 +56,6 @@ const Header = () => {
             setMobile(window.matchMedia('(max-width:770px)').matches)
         })
     })
-
 
     return (
         <header>

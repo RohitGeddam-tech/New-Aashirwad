@@ -16,7 +16,7 @@ const List = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                 </p>
                 <div className='item vb'>
-                    <button className="ui button">BOOK AN APPOINTMENT</button>
+                    <a className="ui button">BOOK AN APPOINTMENT</a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@ const Mobile = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
+                        <a className='ui button'>BOOK AN APPOINTMENT</a>
                     </div>
                 </div>
             </div> 
