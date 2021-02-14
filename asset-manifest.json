@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/New-Aashirwad/static/css/main.f3560f14.chunk.css",
-    "main.js": "/New-Aashirwad/static/js/main.8142e079.chunk.js",
-    "main.js.map": "/New-Aashirwad/static/js/main.8142e079.chunk.js.map",
+    "main.js": "/New-Aashirwad/static/js/main.c86a696c.chunk.js",
+    "main.js.map": "/New-Aashirwad/static/js/main.c86a696c.chunk.js.map",
     "runtime-main.js": "/New-Aashirwad/static/js/runtime-main.0d7ade8f.js",
     "runtime-main.js.map": "/New-Aashirwad/static/js/runtime-main.0d7ade8f.js.map",
     "static/css/2.d82ffdc3.chunk.css": "/New-Aashirwad/static/css/2.d82ffdc3.chunk.css",
@@ -26,6 +26,6 @@
     "static/css/2.d82ffdc3.chunk.css",
     "static/js/2.b155707f.chunk.js",
     "static/css/main.f3560f14.chunk.css",
-    "static/js/main.8142e079.chunk.js"
+    "static/js/main.c86a696c.chunk.js"
   ]
 }
