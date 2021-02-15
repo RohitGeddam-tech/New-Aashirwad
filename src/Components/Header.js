@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './CSS/Header.css';
+import {BsX} from 'react-icons/bs';
 
 const List = () => {
     return (
@@ -32,11 +33,10 @@ const MobileList =()=>{
                     setActive(!isActive);
                 }}
             >
-                {isActive ? <i className='big x icon'></i> : <i className='large bars icon'></i>}
+                {isActive ? <BsX size='35px'/> : <i className='large bars icon'></i>}
             </a>
             {isActive && <div className='navbtn'>
-                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)' }}> About Us</a>
-                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Services</a>
+                <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> About Us</a>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Pathological Equipments</a>
                 <a className='item itemname' style={{color: 'rgba(123, 127, 140, 0.5)'}}> Contact Us</a>
                 <div class="itembtn">
@@ -56,6 +56,7 @@ const Header = () => {
             setMobile(window.matchMedia('(max-width:770px)').matches)
         })
     })
+
 
     return (
         <header>

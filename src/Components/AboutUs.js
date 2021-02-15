@@ -39,9 +39,10 @@ const AboutUs = () => {
     })
     return (
         <div className='firstus'>
-            {isMobile ? <div className='Mobcontentbox'>
-            <div className='texttitle'>
-                <h3 className='mobh'>About us <img className='mobline' src={line} alt='...' /> </h3>
+            {isMobile ?
+            <div className='Mobcontentbox'>
+            <div className='texttitlemob'>
+                <h3 className='mobh'>About us </h3>
             </div>
             <p className='mobp'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -56,7 +57,7 @@ const AboutUs = () => {
         </div> : <List />}
             {/* in desktop version <list /> from first ismobile state and <moblist /> from ismobile 2 will be accessed
             and in mobile view the opposite will happen*/}
-            {isMobile ? <h1 className='hello'>hello</h1> : <MobList />}
+            {isMobile ? <h1 className='hello'>hello</h1> :<MobList />}
         </div>
     )
 }
