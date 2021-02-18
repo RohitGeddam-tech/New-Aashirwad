@@ -7,8 +7,8 @@ import Fullpage from './AboutUs/FullPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    {/* <Fullpage /> */}
+    {/* <App /> */}
+    <Fullpage />
   </React.StrictMode>,
   document.getElementById('root')
 );
