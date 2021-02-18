@@ -10,10 +10,12 @@ header{
   
   .brand-name{
     padding: 15px 15px;
+    margin-left: 45px;
   }
   
   .ui.secondary.menu{
     margin-right: 40px;
+    margin-left: 40px;
     margin-top: 0px !important;
   }
   
@@ -23,29 +25,20 @@ header{
     background: #0c4480;
     text-transform: uppercase;
   }
-  
-  .brand-name a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #0c4480;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  
-  .brand-name .a1{
-    color: #119ef0;
-  }
+/*   
+  .brand-name{
+    height: 29px;
+  } */
 
   .ui.menu a.item:hover{
     color: #0c4480 !important;
   }
 
-
-
   .ui.menu a.item{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    color: #7B7F8C;
   }
 
   .mobbtn{
@@ -58,6 +51,12 @@ header{
     background-color: white !important;
   }
   /*mobile view starts*/
+
+  .Mobbrand-name{
+    padding: 15px 15px;
+    padding-left: 25%;
+    width: 80%;
+  }
 
 .navbtn{
   width: 100%;
@@ -74,17 +73,18 @@ header{
 }
 
 a.item.itemname{
-  color: rgba(123, 127, 140, 0.5);
-  margin-top: 18px;
+  color: #7B7F8C !important;
+  margin-top: 25px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: 'Montserrat' !important;
 }
 
 .itembtn{
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
-  /*mobile view ends*/
+/*mobile view ends*/
   
   /*Header ends*/
 

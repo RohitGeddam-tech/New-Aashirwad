@@ -1,7 +1,6 @@
 /*Service page starts*/
 
 .service{
-    height: 550px;
     width: 100%;
     background-color: #0c4480;
   }
@@ -21,6 +20,12 @@
     color: white;
     font-style: bold;
     padding-top: 29px;
+  }
+
+  .inthemiddle{
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
   }
   
   .head img{
@@ -45,10 +50,11 @@
   
   .disp{
     display: block;
-    width: 90%;
+    width: 85%;
     height: 50%;
     margin-left: 8%;
-    margin-top: 80px;
+    margin-top: 60px;
+    padding-bottom: 80px;
     overflow-x: hidden;
     box-sizing: border-box;
   }

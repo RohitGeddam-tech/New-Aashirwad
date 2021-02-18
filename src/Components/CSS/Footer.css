@@ -28,7 +28,7 @@
 .titlenames{
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
     color: #092F57; 
@@ -47,7 +47,7 @@
 }
 
 .midline{
-    border: 0.2px solid black;
+    border: 0.2px solid #092F57;
     width: 100%;
     height: 0.3px;
 }

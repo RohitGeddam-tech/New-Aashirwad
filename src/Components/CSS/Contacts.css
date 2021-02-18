@@ -25,6 +25,13 @@
     width: 99%;
 }
 
+.atthemiddle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #092F57;
+    font-size: 30px;
+}
+
 .atheader{
     display: flex;
     align-items: center;
@@ -34,9 +41,6 @@
     padding-top: 29px;
 }
 
-.atthemiddle{
-    color: #092F57;
-}
 
 .inthecenter{
     font-style: normal;
@@ -65,11 +69,11 @@
 .contentsheet{
     width: 85%;
     height: fit-content;
-    display: flex;
-    align-items: inherit;
-    justify-content: space-between;
     margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
 }
+
 
 .theheader{
     width: 30%;
@@ -80,6 +84,7 @@
     font-style: normal;
     line-height: 18px;
 }
+
 /* 
 .spana{
     text-align: center;
@@ -92,54 +97,50 @@
 /*mob view starts*/
 
 .mainmobsheet{
-    height: 400px;
-    margin-top: 3%;
+    height: 350px;
+    margin-top: 25px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
     width: 90%;
-    margin: auto;
+    margin-left: 8px;
 }
 
 .imgmobsheet{
-    width: fit-content;
+    width: 20%;
+    height: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     flex-flow: column wrap;
-    margin-left: 30px;
 }
 
 .contentmobsheet{
-    width: 50%;
-    height: 100%;
+    width: 76%;
+    height: 90%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
-    margin-left: 20px;
-}
-
-.amob{
-    margin-top: 120px;
-}
-
-.aspanmob{
-    margin-top: 45px;
+    justify-content: space-between;
 }
 
 .sheetmobimg{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .themobheader{
-    font-size: 16px;
+    font-size: 18px;
     text-align: start;
     color: #092F57;
-    margin: auto;
     margin-left: 0 !important;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
+    padding-top: 25px;
 }
 
 /*mob view ends*/

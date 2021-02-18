@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './CSS/Header.css';
 import {BsX} from 'react-icons/bs';
+import logo from './Photos/logo.svg';
 
 const List = () => {
     return (
@@ -47,23 +48,30 @@ const MobileList =()=>{
     )
 }
 
+const Intro = () => {
+    return(
+        <div className='brand-name'>
+            <img src={logo}/>
+        </div>
+    )
+}
+
 const Header = () => {
     const[isMobile, setMobile] = useState(
-        window.matchMedia('(max-width:770px)').matches
+        window.matchMedia('(max-width:780px)').matches
     );
     useEffect(()=>{
         window.addEventListener('resize', ()=>{
-            setMobile(window.matchMedia('(max-width:770px)').matches)
+            setMobile(window.matchMedia('(max-width:780px)').matches)
         })
     })
-
 
     return (
         <header>
             <nav className='navbar navbar-secondary' style={{width: '100%'}}>
-                <div className='brand-name'>
-                    <a href='#'>AASHIRVAD <a className='a1' href='#'>LAB</a></a>
-                </div>
+                {isMobile ? <div className='Mobbrand-name'>
+                    <img src={logo}/>
+                </div> : <Intro />}
                 {isMobile ? <MobileList /> : <List />}
             </nav>
         </header>

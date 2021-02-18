@@ -11,29 +11,21 @@ export default class Responsive extends Component {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         initialSlide: 0,
         responsive: [
           {
-            breakpoint: 1050,
+            breakpoint: 830,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 2,
+              slidesToScroll: 2,
               infinite: true,
               dots: true
             }
           },
           {
-            breakpoint: 784,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 560,
+            breakpoint: 590,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -46,48 +38,48 @@ export default class Responsive extends Component {
         <div className='boxslick'>
           <Slider {...settings}>
             <div className='insideboxslick'>
-                <div className='deskoffersmobpic'>
+                <div className='Mobslide'>
                     <img src={scrn}/>
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnrea'>Book Now</a>
+                    <a className='ui button btnre'>Book Now</a>
                 </div>
             </div>
             <div>
-                <div className='deskoffersmobpic'>
+                <div className='Mobslide'>
                     <img src={scrn}/>
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnrea'>Book Now</a>
+                    <a className='ui button btnre'>Book Now</a>
                 </div>
             </div>
             <div>
-                <div className='deskoffersmobpic'>
+                <div className='Mobslide'>
                     <img src={scrn}/>
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnrea'>Book Now</a>
+                    <a className='ui button btnre'>Book Now</a>
                 </div>
             </div>
-            <div className='lastboxslick'>
-                <div className='deskoffersmobpic'>
+            <div>
+                <div className='Mobslide'>
                     <img src={scrn}/>
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnrea'>Book Now</a>
+                    <a className='ui button btnre'>Book Now</a>
                 </div>
             </div>
-            <div className='lastboxslick'>
-                <div className='deskoffersmobpic'>
+            <div>
+                <div className='Mobslide'>
                     <img src={scrn}/>
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnrea'>Book Now</a>
+                    <a className='ui button btnre'>Book Now</a>
                 </div>
             </div>
           </Slider>

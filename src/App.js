@@ -13,11 +13,10 @@ const View = () => {
     <div className='App'>
       <Header />
       <Home />
-      
       <section>
       <AboutUs />
       </section>
-      <section className='sm'>
+      <section>
         <Services />
       </section>
       <section>
@@ -35,11 +34,11 @@ const View = () => {
 
 const App=() => {
   const[isMobile, setMobile] = useState(
-    window.matchMedia('(max-width:360px)').matches
+    window.matchMedia('(max-width:350px)').matches
 );
 useEffect(()=>{
     window.addEventListener('resize', ()=>{
-        setMobile(window.matchMedia('(max-width:360px)').matches)
+        setMobile(window.matchMedia('(max-width:350px)').matches)
     })
 })
   return (
