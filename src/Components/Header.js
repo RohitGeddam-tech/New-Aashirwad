@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Popup from './Popup';
 import Hamburger from 'hamburger-react';
 import Collapse from '@material-ui/core/Collapse';
+import {HashLink} from 'react-router-hash-link'
 
 
 // ReactModal.setAppElement('#main');
@@ -38,11 +39,11 @@ const List = () => {
                     Pathological Equipments
                     </button>
             </Link>
-            {/* <Link style={{ marginTop: '10px' }} to='/New-Aashirwad/Contacts'> */}
-                <a href='#msheet' className="item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)', marginTop: '3.5px' }}>
+            <HashLink style={{ marginTop: '8px' }} to='/New-Aashirwad/#msheet'>
+                <button href='#msheet' className="ui button item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)', marginTop: '3.5px' }}>
                     Contact Us
-                </a>
-            {/* </Link> */}
+                </button>
+            </HashLink>
                 { isMobile ? <div className="item mobbtn"> <Link to='/New-Aashirwad/Form'> <button className="ui button">
                     BOOK AN APPOINTMENT
                 </button> </Link> </div> : 
@@ -72,7 +73,6 @@ const MobileList = () => {
                     setActive(!isActive);
                 }}
             >
-                {/* {isActive ? <BsX size='35px' /> : <i className='large bars icon'></i>} */}
                 <Hamburger direction='left' className='ham' duration={0.2} color='black' toggled={isActive} toggle={setActive} />
             </a>
             <Collapse className='colapse' in={isActive}> 
@@ -83,12 +83,9 @@ const MobileList = () => {
                 <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Pathology'>
                     <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Pathological Equipments</button>
                 </Link>
-                {/* <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Contacts'>
-                    <a onClick={()=>{setActive(!isActive)}} className='item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Contact Us</a>
-                </Link> */}
-                 <a href='#msheet' onClick={()=>{setActive(!isActive)}} className="ui item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
-                    Contact Us
-                </a>
+                <HashLink style={{ marginTop: '25px' }} to='/New-Aashirwad/#msheet'>
+                    <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Contact Us</button>
+                </HashLink>
                 <div className="itembtn"> {Tab ? <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Form'>
                         <button onClick={()=>{setActive(!isActive)}} className="ui button">BOOK AN APPOINTMENT</button>
                     </Link> : <Popup />}

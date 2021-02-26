@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './CSS/Footer.css';
 import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link'
 
 const Desktop = () => {
     return(
@@ -8,8 +9,7 @@ const Desktop = () => {
             <div className='firstrectangle'>
                 <Link to='/New-Aashirwad/About'><h3 className='titlenames'>About Us</h3></Link>
                 <Link to='/New-Aashirwad/About'><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></Link>
-                {/* <Link to='/New-Aashirwad/About'><h3 className='titlenames'>CONTACT US</h3></Link> */}
-                <a href='#msheet' className='titlenames'>CONTACT US</a>
+                <HashLink to='/New-Aashirwad/#msheet'><h3 className='titlenames'>CONTACT US</h3></HashLink>
                 <Link to='/New-Aashirwad/About'><h3 className='titlenames'>PRIVACY POLICY</h3></Link>
                 <Link to='/New-Aashirwad/About'><h3 className='titlenames'>TERMS & CONDITIONS</h3></Link>
             </div>
@@ -33,12 +33,8 @@ const Mobile = () => {
         <div className='insidefooter'>
             <div className='firstmobrectangle'>
             <Link to='/New-Aashirwad/About'><h3 className='titlenames'>About Us</h3></Link>
-            {/* <Link to='/New-Aashirwad/About'> */}
-                <a href='#msheet' className='titlenames'>PATHOLOGICAL EQUIPMENTS</a>
-            {/* </Link> */}
-            {/* <Link to='/New-Aashirwad/About'> */}
-                <a href='#msheet' className='titlenames'>CONTACT US</a>
-                {/* </Link> */}
+            <Link to='/New-Aashirwad/About'><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></Link>
+            <HashLink to='/New-Aashirwad/#msheet'><h3 className='titlenames'>CONTACT US</h3></HashLink>
             </div>
             <div className='secondrectangle'>
                 <div className='innerrectangle'>
