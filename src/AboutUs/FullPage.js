@@ -8,7 +8,6 @@ import LastPage from './LastPage';
 const View =()=>{
     return(
         <div className='App'>
-            <Header />
             <FirstPage />
             <section>
                 <MiddlePage />

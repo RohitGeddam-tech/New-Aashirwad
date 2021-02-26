@@ -1,7 +1,18 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
+import Popup from './Popup';
+
 
 export default class SimpleSlider extends Component {
+
+  state={Mobile: window.matchMedia('(max-width:400px)').matches};
+  componentDidMount(){
+    window.addEventListener('resize', () => {
+      this.setState({Mobile: window.matchMedia('(max-width:400px)').matches})
+    })
+  }
+
   render() {
     const settings = {
       dots: true,
@@ -16,14 +27,17 @@ export default class SimpleSlider extends Component {
         <Slider {...settings}>
           <div>
             <div className='mobdet'>
-                
                 <div className='mobdata'>
                 <h3 className='mobh'>Banner Title</h3>
                     <p className='lead mobilep'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
+                      {this.state.Mobile ? <Link to='/New-Aashirwad/Form'> 
+                        <button className="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link> : <Popup />}
                     </div>
                 </div>
             </div> 
@@ -36,7 +50,11 @@ export default class SimpleSlider extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'> 
+                        <button className="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link> : <Popup />}
                     </div>
                 </div>
             </div> 
@@ -49,7 +67,11 @@ export default class SimpleSlider extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
                     <div className='item mobbutton'>
-                        <button className='ui button'>BOOK AN APPOINTMENT</button>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'> 
+                        <button className="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link> : <Popup />}
                     </div>
                 </div>
             </div> 

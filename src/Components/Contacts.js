@@ -70,7 +70,7 @@ const Mobsecond = () => {
             </div>
             <div className='contentmobsheet'>
                 <a href='tel:+912226711340' className='themobheader'>+91 22 2671 1340</a>
-                <a style={{marginTop:'10px'}} href='mailto:contact@aashirwadlabs.com' className='themobheader'>contact@aashirwadlabs.com</a>
+                <a style={{marginTop:'10px', wordBreak:'break-all'}} href='mailto:contact@aashirwadlabs.com' className='themobheader'>contact@aashirwadlabs.com</a>
                 <a style={{marginBottom:'15px'}} href='https://goo.gl/maps/mEUdamwgNEbd6Ddh8' className="themobheader">
                         Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar, Ghatkopar (E), Mumbai, Maharashtra - 75
                 </a>
@@ -82,16 +82,16 @@ const Mobsecond = () => {
 const Contacts = () => {
 
     const[isMobile, setMobile] = useState(
-        window.matchMedia('(max-width:750px)').matches
+        window.matchMedia('(max-width:800px)').matches
     );
     useEffect(()=>{
         window.addEventListener('resize', ()=>{
-            setMobile(window.matchMedia('(max-width:750px)').matches)
+            setMobile(window.matchMedia('(max-width:800px)').matches)
         })
     })
 
     return (
-        <div className='msheet'>
+        <div className='msheet' id='msheet'>
             {isMobile ? <Mobilefirst /> : <Desktopfirst />}
             {isMobile ? <Mobsecond /> : <Desksecond />}
         </div>

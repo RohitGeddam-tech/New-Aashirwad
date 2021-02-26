@@ -11,7 +11,6 @@ import Footer from './Components/Footer';
 const View = () => {
   return(
     <div className='App'>
-      <Header />
       <Home />
       <section>
       <AboutUs />
@@ -33,17 +32,9 @@ const View = () => {
 }
 
 const App=() => {
-  const[isMobile, setMobile] = useState(
-    window.matchMedia('(max-width:350px)').matches
-);
-useEffect(()=>{
-    window.addEventListener('resize', ()=>{
-        setMobile(window.matchMedia('(max-width:350px)').matches)
-    })
-})
   return (
     <div className="App">
-    {isMobile ? <div>your mobile is not compatible to access this website</div> : <View />}
+     <View />
     </div>
   );
 }

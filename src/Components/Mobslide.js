@@ -3,9 +3,17 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import scrn from './Photos/offers2.jpg';
-
+import {Link} from 'react-router-dom';
+import SliderPopup from './SliderPopup'
 
 export default class Responsive extends Component {
+  state={Mobile: window.matchMedia('(max-width:400px)').matches};
+  componentDidMount(){
+    window.addEventListener('resize', () => {
+      this.setState({Mobile: window.matchMedia('(max-width:400px)').matches})
+    })
+  }
+
     render() {
       var settings = {
         dots: true,
@@ -25,7 +33,7 @@ export default class Responsive extends Component {
             }
           },
           {
-            breakpoint: 590,
+            breakpoint: 630,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -43,7 +51,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -52,7 +62,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -61,7 +73,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -70,7 +84,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -79,7 +95,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    <a className='ui button btnre'>Book Now</a>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
+                      <button className='ui button btnre'>Book Now</button>
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
           </Slider>

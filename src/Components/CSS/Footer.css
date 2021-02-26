@@ -21,21 +21,29 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 60px;
     margin-bottom: 15px;
 }
 
 .titlenames{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     color: #092F57; 
     text-align: center;
     margin:auto;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-family: 'Montserrat';
+}
+
+a.titlenames{
+    margin: 0;
+}
+
+a.titlenames:hover{
+    color: #092F57; 
 }
 
 .titlenames:first-child{
@@ -47,19 +55,19 @@
 }
 
 .midline{
-    border: 0.2px solid #092F57;
+    border: 0.1px solid #092F57;
     width: 100%;
-    height: 0.3px;
+    height: 0.1px;
 }
 
 .secondrectangle{
     width: 100%;
     height: 25px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .innerrectangle{
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

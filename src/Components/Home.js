@@ -4,8 +4,20 @@ import './CSS/Home.css';
 import cover from './Photos/cover1.jpg';
 import cover2 from './Photos/cover2.jpg';
 import HomeSlide from "./HomeSlide";
+import { Link } from 'react-router-dom';
+import Popup from './Popup';
 
 const List = () => {
+    const [isMobile, setMobile] = useState(
+        window.matchMedia('(max-height:570px)').matches
+    );
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            setMobile(window.matchMedia('(max-height:570px)').matches)
+        })
+    })
+
+
     return (
         <div className='det'>
             <h1 className='h'>Banner Title</h1>
@@ -13,9 +25,13 @@ const List = () => {
                 <p className="lead p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                 </p>
-                <div className='item vb'>
-                    <button className="ui button">BOOK AN APPOINTMENT</button>
+                { isMobile ? <div className="item vb"> <Link to='/New-Aashirwad/Form'> <button className="ui button">
+                    BOOK AN APPOINTMENT
+                </button> </Link> </div> : 
+                    <div className="item vb"> 
+                    <Popup />
                 </div>
+                }
             </div>
         </div>
     )
