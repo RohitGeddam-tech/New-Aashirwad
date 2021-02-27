@@ -50,7 +50,6 @@ const List = () => {
 }
 
 
-
 const MobileList = () => {
     const [isActive, setActive] = useState(false);
     const [Tab, setTab] = useState(
@@ -63,11 +62,11 @@ const MobileList = () => {
     })
 
     const [isMobile, setMobile] = useState(
-        window.matchMedia('(max-height:570px)').matches
+        window.matchMedia('(max-height:750px)').matches
     );
     useEffect(() => {
         window.addEventListener('resize', () => {
-            setMobile(window.matchMedia('(max-height:570px)').matches)
+            setMobile(window.matchMedia('(max-height:750px)').matches)
         })
     })
 

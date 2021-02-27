@@ -14,10 +14,10 @@ export default class Responsive extends Component {
     })
   }
 
-  state={small : window.matchMedia('(max-height:570px)').matches};
+  state={small : window.matchMedia('(max-height:750px)').matches};
   componentDidMount(){
     window.addEventListener('resize', () => {
-      this.setState({small: window.matchMedia('(max-height:570px)').matches})
+      this.setState({small: window.matchMedia('(max-height:750px)').matches})
     })
   }
 
