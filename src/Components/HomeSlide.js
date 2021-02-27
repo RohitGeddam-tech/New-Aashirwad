@@ -13,6 +13,13 @@ export default class SimpleSlider extends Component {
     })
   }
 
+  state={small : window.matchMedia('(max-height:570px)').matches};
+  componentDidMount(){
+    window.addEventListener('resize', () => {
+      this.setState({small: window.matchMedia('(max-height:570px)').matches})
+    })
+  }
+
   render() {
     const settings = {
       dots: true,
@@ -32,13 +39,18 @@ export default class SimpleSlider extends Component {
                     <p className='lead mobilep'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
-                    <div className='item mobbutton'>
+                    {this.state.small ? <div className='item mobbutton'>
+                    <Link to='/New-Aashirwad/Form'> 
+                        <button className="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link>
+                    </div> : <div className='item mobbutton'>
                       {this.state.Mobile ? <Link to='/New-Aashirwad/Form'> 
                         <button className="ui button">
                           BOOK AN APPOINTMENT
                         </button> 
-                      </Link> : <Popup />}
-                    </div>
+                      </Link> : <Popup />} </div>}
                 </div>
             </div> 
           </div>
@@ -49,13 +61,18 @@ export default class SimpleSlider extends Component {
                     <p className='lead mobilep'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
-                    <div className='item mobbutton'>
-                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'> 
+                    {this.state.small ? <div className='item mobbutton'>
+                    <Link to='/New-Aashirwad/Form'> 
                         <button className="ui button">
                           BOOK AN APPOINTMENT
                         </button> 
-                      </Link> : <Popup />}
-                    </div>
+                      </Link>
+                    </div> : <div className='item mobbutton'>
+                      {this.state.Mobile ? <Link to='/New-Aashirwad/Form'> 
+                        <button className="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link> : <Popup />} </div>}
                 </div>
             </div> 
           </div>
@@ -66,13 +83,18 @@ export default class SimpleSlider extends Component {
                     <p className='lead mobilep'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                     </p>
-                    <div className='item mobbutton'>
-                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'> 
+                    {this.state.small ? <div className='item mobbutton'>
+                    <Link to='/New-Aashirwad/Form'> 
                         <button className="ui button">
                           BOOK AN APPOINTMENT
                         </button> 
-                      </Link> : <Popup />}
-                    </div>
+                      </Link>
+                    </div> : <div className='item mobbutton'>
+                      {this.state.Mobile ? <Link to='/New-Aashirwad/Form'> 
+                        <button className="ui button">
+                          BOOK AN APPOINTMENT
+                        </button> 
+                      </Link> : <Popup />} </div>}
                 </div>
             </div> 
           </div>

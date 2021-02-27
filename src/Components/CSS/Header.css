@@ -85,7 +85,46 @@ header{
   color: #092F57 !important;
 }
 
- .hamburger-react{
+.ui.button.item.itemname::after{
+  font-size: 20px !important;
+  color: red !important;
+}
+
+.formsubmit{
+  margin-top: 10px !important;
+  color: #092F57;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.mobmodal{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  z-index: 9999;
+  margin: auto !important;
+  justify-content: center !important;
+}
+
+.mobpopup{
+  width: 50%;
+  height: 50%;
+  background-color: white !important;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.mobpopup button{
+  margin-bottom: 10px !important;
+}
+
+.hamburger-react{
   margin-right: 5px !important;
 } 
 
@@ -94,7 +133,7 @@ header{
 }
 
 a.item.itemname{
-  color: #7B7F8C !important;
+  color: #466ff5 !important;
   margin-top: 28px;
   font-size: 16px;
   font-weight: 400;
@@ -105,6 +144,7 @@ a.item.itemname{
 a.item.itemname:hover{
   color: #092F57;
 }
+
 
 .itembtn{
   margin-top: 25px;

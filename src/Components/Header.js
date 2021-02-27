@@ -8,14 +8,6 @@ import Hamburger from 'hamburger-react';
 import Collapse from '@material-ui/core/Collapse';
 import {HashLink} from 'react-router-hash-link'
 
-
-// ReactModal.setAppElement('#main');
-// const Contact = () => {
-//     if(Link != (to='/New-Aashirwad')){
-//     alert('this funtions only on the homepage so plase go to the homepage.')
-//     }
-// }
-
 const List = () => {
     const [isMobile, setMobile] = useState(
         window.matchMedia('(max-height:550px)').matches
@@ -26,8 +18,11 @@ const List = () => {
         })
     })
     
-    return (
-        // <div style={style}>
+    return (<>
+        <div className='brand-name'>
+            <Link to='/New-Aashirwad'><img src={logo} /></Link>
+        
+            </div>
         <div className="ui secondary  menu">
             <Link style={{ marginTop: '10px' }} to='/New-Aashirwad/About'>
                 <button href='/New-Aashirwad/About' className="ui button item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
@@ -49,10 +44,12 @@ const List = () => {
                 </button> </Link> </div> : 
                    <div className="item mobbtn">  <Popup /> </div>
                 }
-        
         </div>
+        </>
     )
 }
+
+
 
 const MobileList = () => {
     const [isActive, setActive] = useState(false);
@@ -65,8 +62,20 @@ const MobileList = () => {
         })
     })
 
+    const [isMobile, setMobile] = useState(
+        window.matchMedia('(max-height:570px)').matches
+    );
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            setMobile(window.matchMedia('(max-height:570px)').matches)
+        })
+    })
+
     return (
         <>
+        <div className='Mobbrand-name'>
+                    <Link to='/New-Aashirwad' onClick={()=>{setActive(!isActive)}}><img src={logo} /></Link>
+                </div> 
             <a
                 className='big bars icon'
                 onClick={() => {
@@ -86,10 +95,12 @@ const MobileList = () => {
                 <HashLink style={{ marginTop: '25px' }} to='/New-Aashirwad/#msheet'>
                     <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Contact Us</button>
                 </HashLink>
-                <div className="itembtn"> {Tab ? <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Form'>
+                {isMobile ? <div className="itembtn"> <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Form'>
+                        <button onClick={()=>{setActive(!isActive)}} className="ui button">BOOK AN APPOINTMENT</button>
+                    </Link> </div> : <div className="itembtn"> {Tab ? <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Form'>
                         <button onClick={()=>{setActive(!isActive)}} className="ui button">BOOK AN APPOINTMENT</button>
                     </Link> : <Popup />}
-                </div>
+                </div>}
             </div>
             </Collapse>
         </>
@@ -113,13 +124,11 @@ const Header = () => {
             setMobile(window.matchMedia('(max-width:850px)').matches)
         })
     })
+    // const [isActive, setActive] = useState(false);
 
     return (
         <header>
             <nav className='navbar navbar-secondary' style={{ width: '100%' }}>
-                {isMobile ? <div className='Mobbrand-name'>
-                    <Link to='/New-Aashirwad'><img src={logo} /></Link>
-                </div> : <Intro />}
                 {isMobile ? <MobileList /> : <List />}
             </nav>
         </header>

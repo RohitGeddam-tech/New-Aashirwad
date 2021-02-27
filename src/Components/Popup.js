@@ -7,10 +7,12 @@ import Select from '@material-ui/core/Select';
 import FormControl from '@material-ui/core/FormControl';
 import { BsX } from 'react-icons/bs';
 // import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
 
 const Popup = () => {
     const [isModal, setModal] = useState(false);
     // const [select, setSelect] = useState('');
+    const [isSubmit, setSubmit] = useState(false)
 
     const handleOpen = () => {
         setModal(true);
@@ -20,6 +22,14 @@ const Popup = () => {
         setModal(false);
     };
     const [errors, setErrors] = useState({})
+
+    const afterClick =()=>{
+        if (!values.name, !values.email, !values.mobile, !values.select, !values.textField) {
+            console.log('form errors', errors)
+        } else if (values.name, values.email, values.mobile, values.select, values.textField) {
+            setSubmit(true)
+        }
+    }
 
     const { handleChange, values } = useForm(validate);
 
@@ -41,19 +51,12 @@ const Popup = () => {
         //     alert('form is not submitted')
         // } else 
         if (!values.name, !values.email, !values.mobile, !values.select, !values.textField) {
-            alert('fill in the values')
+            console.log('form errors', errors)
         } else if (values.name, values.email, values.mobile, values.select, values.textField) {
-            alert('form submitted');
             setModal(false)
         }
 
-        // alert('form submitted')
         console.log('form values', values)
-        console.log('form errors', errors)
-        // setModal(false);
-        // handleClose;
-        // setIsSubmit(true);
-
     }
 
     return (
@@ -134,12 +137,18 @@ const Popup = () => {
                         />
                         {errors.textField && <h4 className='errorp'>{errors.textField}</h4>}
                         <div>
-                            <button type='submit' className='ui button newbtn'>Submit</button>
+                            <button type='submit' onClick={afterClick} className='ui button newbtn'>Submit</button>
                         </div>
                     </form>
                     <h3>OR</h3>
                     <h5 className='ptag'>Call Us at :<a href='tel:+919876509876' className='popupa'>+91 98765 09876</a></h5>
                 </div>
+            </Modal>
+            <Modal className='mobmodal' open={isSubmit}>
+                        <div className='mobpopup'>
+                            <h5 className='formsubmit'> Your Form is Submitted please click on Submitted to return </h5>
+                            <button className='ui button newbtn' onClick={()=>{setSubmit(false)}}>Submitted</button>
+                        </div>
             </Modal>
         </div>
     )

@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Select from '@material-ui/core/Select';
 import FormControl from '@material-ui/core/FormControl';
-
-
+import Modal from '@material-ui/core/Modal';
 
 const Form = () => {
 
@@ -16,9 +15,8 @@ const Form = () => {
 
     const afterClick = () => {
         if (!values.name, !values.email, !values.mobile, !values.select, !values.textField) {
-            alert('fill in the values')
+            console.log('form errors', errors)
         } else if (values.name, values.email, values.mobile, values.select, values.textField) {
-            alert('Your Form is Submitted. Please click on the submitted button to go back to the home page');
             setSubmit(true);
         }
     }
@@ -29,12 +27,6 @@ const Form = () => {
         e.preventDefault();
 
         setErrors(validate(values));
-
-        // if(!values.name, !values.email, !values.mobile, !values.select, !values.textField){
-        //     alert('fill in the values')
-        // }else if(values.name, values.email, values.mobile, values.select, values.textField){
-        //     alert('form submitted');
-        // }
     }
 
 
@@ -110,11 +102,16 @@ const Form = () => {
                             }}
                         />
                         {errors.textField && <h4 className='errorp'>{errors.textField}</h4>}
-                        <div>
-                            {isSubmit ? <Link to='/New-Aashirwad'><button className='ui button'>Submitted</button></Link>: 
-                            <button type='submit' onClick={afterClick} className='ui button newbtn'>Submit</button>}
+                        <div> 
+                            <button type='submit' onClick={afterClick} className='ui button newbtn'>Submit</button>
                         </div>
                     </form>
+                    <Modal className='mobmodal' open={isSubmit}>
+                        <div className='mobpopup'>
+                            <h5 className='formsubmit'> Your Form is Submitted please click on Submitted to return </h5>
+                            <Link to='/New-Aashirwad'><button className='ui button newbtn'>Submitted</button></Link>
+                        </div>
+                    </Modal> 
                 <h3>OR</h3>
                 <h5 className='ptag'>Call Us at :<a href='tel:+919876509876' className='popupa'>+91 98765 09876</a></h5>
             </div>
