@@ -61,15 +61,6 @@ const MobileList = () => {
         })
     })
 
-    const [isMobile, setMobile] = useState(
-        window.matchMedia('(max-height:750px)').matches
-    );
-    useEffect(() => {
-        window.addEventListener('resize', () => {
-            setMobile(window.matchMedia('(max-height:750px)').matches)
-        })
-    })
-
     return (
         <>
         <div className='Mobbrand-name'>
@@ -94,12 +85,9 @@ const MobileList = () => {
                 <HashLink style={{ marginTop: '25px' }} to='/New-Aashirwad/#msheet'>
                     <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Contact Us</button>
                 </HashLink>
-                {isMobile ? <div className="itembtn"> <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Form'>
+                <div className="itembtn"> {Tab ? <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Form'>
                         <button onClick={()=>{setActive(!isActive)}} className="ui button">BOOK AN APPOINTMENT</button>
-                    </Link> </div> : <div className="itembtn"> {Tab ? <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Form'>
-                        <button onClick={()=>{setActive(!isActive)}} className="ui button">BOOK AN APPOINTMENT</button>
-                    </Link> : <Popup />}
-                </div>}
+                    </Link> : <Popup />}</div>
             </div>
             </Collapse>
         </>

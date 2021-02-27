@@ -14,12 +14,6 @@ export default class Responsive extends Component {
     })
   }
 
-  state={small : window.matchMedia('(max-height:750px)').matches};
-  componentDidMount(){
-    window.addEventListener('resize', () => {
-      this.setState({small: window.matchMedia('(max-height:750px)').matches})
-    })
-  }
 
     render() {
       var settings = {
@@ -58,11 +52,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    {this.state.small ? <Link to='/New-Aashirwad/Form'>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
                       <button className='ui button btnre'>Book Now</button>
-                    </Link>  :  <div>{this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
-                      <button className='ui button btnre'>Book Now</button>
-                    </Link> : <SliderPopup />}</div>}
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -71,11 +63,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    {this.state.small ? <Link to='/New-Aashirwad/Form'>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
                       <button className='ui button btnre'>Book Now</button>
-                    </Link>  :  <div>{this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
-                      <button className='ui button btnre'>Book Now</button>
-                    </Link> : <SliderPopup />}</div>}
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -84,11 +74,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    {this.state.small ? <Link to='/New-Aashirwad/Form'>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
                       <button className='ui button btnre'>Book Now</button>
-                    </Link>  :  <div>{this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
-                      <button className='ui button btnre'>Book Now</button>
-                    </Link> : <SliderPopup />}</div>}
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -97,11 +85,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    {this.state.small ? <Link to='/New-Aashirwad/Form'>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
                       <button className='ui button btnre'>Book Now</button>
-                    </Link>  :  <div>{this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
-                      <button className='ui button btnre'>Book Now</button>
-                    </Link> : <SliderPopup />}</div>}
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
             <div>
@@ -110,11 +96,9 @@ export default class Responsive extends Component {
                     <h3>Test Name</h3>
                     <h4>Rs.600</h4>
                     <p>Kristy is an art director living in New York.</p>
-                    {this.state.small ? <Link to='/New-Aashirwad/Form'>
+                    {this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
                       <button className='ui button btnre'>Book Now</button>
-                    </Link>  :  <div>{this.state.Mobile ? <Link to='/New-Aashirwad/Form'>
-                      <button className='ui button btnre'>Book Now</button>
-                    </Link> : <SliderPopup />}</div>}
+                    </Link> : <SliderPopup />}
                 </div>
             </div>
           </Slider>

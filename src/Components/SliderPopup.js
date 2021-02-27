@@ -116,7 +116,7 @@ const Popup = () => {
                         />
                         {errors.textField && <h4 className='errorp'>{errors.textField}</h4>}
                         <div>
-                            <button type='submit' onClick={afterClick} className='ui button newbtn'>Submit</button>
+                            <button type='submit' onClick={afterClick}   className='ui button newbtn'>Submit</button>
                         </div>
                     </form>
                         <h3>OR</h3>
