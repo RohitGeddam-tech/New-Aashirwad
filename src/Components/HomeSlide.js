@@ -6,10 +6,10 @@ import Popup from './Popup';
 
 export default class SimpleSlider extends Component {
 
-  state={Mobile: window.matchMedia('(max-width:400px)').matches};
+  state={Mobile: window.matchMedia('(max-width:470px)').matches};
   componentDidMount(){
     window.addEventListener('resize', () => {
-      this.setState({Mobile: window.matchMedia('(max-width:400px)').matches})
+      this.setState({Mobile: window.matchMedia('(max-width:470px)').matches})
     })
   }
 

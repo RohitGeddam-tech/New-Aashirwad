@@ -7,10 +7,10 @@ import {Link} from 'react-router-dom';
 import SliderPopup from './SliderPopup'
 
 export default class Responsive extends Component {
-  state={Mobile: window.matchMedia('(max-width:400px)').matches};
+  state={Mobile: window.matchMedia('(max-width:470px)').matches};
   componentDidMount(){
     window.addEventListener('resize', () => {
-      this.setState({Mobile: window.matchMedia('(max-width:400px)').matches})
+      this.setState({Mobile: window.matchMedia('(max-width:470px)').matches})
     })
   }
 

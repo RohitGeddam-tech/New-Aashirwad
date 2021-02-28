@@ -85,10 +85,6 @@ header{
   color: #092F57 !important;
 }
 
-.ui.button.item.itemname::after{
-  font-size: 20px !important;
-  color: red !important;
-}
 
 .formsubmit{
   margin-top: 10px !important;
@@ -150,6 +146,12 @@ a.item.itemname:hover{
   margin-top: 25px;
 }
 
+.active.ui.button.item.itemname{
+  color: #092F57 !important;
+  background-color: #dddddd !important;
+  border: 0 !important;
+}
+
 .modal{
   width: 100%;
   height: fit-content;
@@ -184,7 +186,6 @@ a.item.itemname:hover{
   width: 100%;
   height: 100%;
   display: flex;
-  padding-top: 120px;
 }
 
 .popup{

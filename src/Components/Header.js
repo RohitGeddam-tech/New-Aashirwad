@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Popup from './Popup';
 import Hamburger from 'hamburger-react';
 import Collapse from '@material-ui/core/Collapse';
-import {HashLink} from 'react-router-hash-link'
+import {NavHashLink ,HashLink} from 'react-router-hash-link'
 
 const List = () => {
     const [isMobile, setMobile] = useState(
@@ -20,25 +20,30 @@ const List = () => {
     
     return (<>
         <div className='brand-name'>
-            <Link to='/New-Aashirwad'><img src={logo} /></Link>
-        
+            <NavHashLink to='/New-Aashirwad#top'><img src={logo} /></NavHashLink>
             </div>
         <div className="ui secondary  menu">
-            <Link style={{ marginTop: '10px' }} to='/New-Aashirwad/About'>
-                <button href='/New-Aashirwad/About' className="ui button item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+            <NavHashLink 
+                activeClassName='active ui button item itemname' 
+                style={{ color: 'rgba(123, 127, 140, 0.5)'  }} 
+                className="ui button item itemname"
+                to='/New-Aashirwad/About#top'>
                     About Us
-                    </button>
-            </Link>
-            <Link style={{ marginTop: '10px' }} to='/New-Aashirwad/Pathology'>
-                <button href='/New-Aashirwad/Pathology' className="ui button item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)' }}>
+            </NavHashLink>
+            <NavHashLink 
+                activeClassName='active ui button item itemname' 
+                style={{ color: 'rgba(123, 127, 140, 0.5)'  }} 
+                className="ui button item itemname"
+                to='/New-Aashirwad/Pathology#top'>
                     Pathological Equipments
-                    </button>
-            </Link>
-            <HashLink style={{ marginTop: '8px' }} to='/New-Aashirwad/#msheet'>
-                <button href='#msheet' className="ui button item itemname" style={{ color: 'rgba(123, 127, 140, 0.5)', marginTop: '3.5px' }}>
+            </NavHashLink>
+            <NavHashLink 
+                activeClassName='active ui button item itemname' 
+                style={{ color: 'rgba(123, 127, 140, 0.5)'  }} 
+                className="ui button item itemname"
+                to='/New-Aashirwad/#msheet'>
                     Contact Us
-                </button>
-            </HashLink>
+            </NavHashLink>
                 { isMobile ? <div className="item mobbtn"> <Link to='/New-Aashirwad/Form'> <button className="ui button">
                     BOOK AN APPOINTMENT
                 </button> </Link> </div> : 
@@ -53,18 +58,18 @@ const List = () => {
 const MobileList = () => {
     const [isActive, setActive] = useState(false);
     const [Tab, setTab] = useState(
-        window.matchMedia('(max-width:400px)').matches
+        window.matchMedia('(max-width:470px)').matches
     );
     useEffect(() => {
         window.addEventListener('resize', () => {
-            setTab(window.matchMedia('(max-width:400px)').matches)
+            setTab(window.matchMedia('(max-width:470px)').matches)
         })
     })
 
     return (
         <>
         <div className='Mobbrand-name'>
-                    <Link to='/New-Aashirwad' onClick={()=>{setActive(!isActive)}}><img src={logo} /></Link>
+                    <HashLink to='/New-Aashirwad#top' onClick={()=>{setActive(false)}}><img src={logo} /></HashLink>
                 </div> 
             <a
                 className='big bars icon'
@@ -76,15 +81,30 @@ const MobileList = () => {
             </a>
             <Collapse className='colapse' in={isActive}> 
             <div className='navbtn'>
-                <Link to='/New-Aashirwad/About' style={{ marginTop: '25px' }}>
-                    <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> About Us</button>
-                </Link>
-                <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Pathology'>
-                    <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Pathological Equipments</button>
-                </Link>
-                <HashLink style={{ marginTop: '25px' }} to='/New-Aashirwad/#msheet'>
-                    <button onClick={()=>{setActive(!isActive)}} className='ui button item itemname' style={{ color: 'rgba(123, 127, 140, 0.5)' }}> Contact Us</button>
-                </HashLink>
+                <NavHashLink 
+                    activeClassName='active ui button item itemname' 
+                    style={{ color: 'rgba(123, 127, 140, 0.5)'  }} 
+                    className="ui button item itemname"
+                    onClick={()=>{setActive(!isActive)}}
+                    to='/New-Aashirwad/About#top'>
+                        About Us
+                </NavHashLink>
+                <NavHashLink 
+                    activeClassName='active ui button item itemname' 
+                    style={{ color: 'rgba(123, 127, 140, 0.5)'  }} 
+                    className="ui button item itemname"
+                    onClick={()=>{setActive(!isActive)}}
+                    to='/New-Aashirwad/Pathology#top'>
+                        Pathological Equipments
+                </NavHashLink>
+                <NavHashLink 
+                    activeClassName='active ui button item itemname' 
+                    style={{ color: 'rgba(123, 127, 140, 0.5)'  }} 
+                    className="ui button item itemname"
+                    onClick={()=>{setActive(!isActive)}}
+                    to='/New-Aashirwad/#msheet'>
+                        Contact Us
+                </NavHashLink>
                 <div className="itembtn"> {Tab ? <Link style={{ marginTop: '25px' }} to='/New-Aashirwad/Form'>
                         <button onClick={()=>{setActive(!isActive)}} className="ui button">BOOK AN APPOINTMENT</button>
                     </Link> : <Popup />}</div>
@@ -94,13 +114,6 @@ const MobileList = () => {
     )
 }
 
-const Intro = () => {
-    return (
-        <div className='brand-name'>
-            <Link to='/New-Aashirwad'><img src={logo} /></Link>
-        </div>
-    )
-}
 
 const Header = () => {
     const [isMobile, setMobile] = useState(

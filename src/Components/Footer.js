@@ -7,11 +7,11 @@ const Desktop = () => {
     return(
         <div className='insidefooter'>
             <div className='firstrectangle'>
-                <Link to='/New-Aashirwad/About'><h3 className='titlenames'>About Us</h3></Link>
-                <Link to='/New-Aashirwad/About'><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></Link>
+                <HashLink to='/New-Aashirwad/About/#top'><h3 className='titlenames'>About Us</h3></HashLink>
+                <HashLink to='/New-Aashirwad/About/#top'><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></HashLink>
                 <HashLink to='/New-Aashirwad/#msheet'><h3 className='titlenames'>CONTACT US</h3></HashLink>
-                <Link to='/New-Aashirwad/About'><h3 className='titlenames'>PRIVACY POLICY</h3></Link>
-                <Link to='/New-Aashirwad/About'><h3 className='titlenames'>TERMS & CONDITIONS</h3></Link>
+                <HashLink to='/New-Aashirwad/About#top'><h3 className='titlenames'>PRIVACY POLICY</h3></HashLink>
+                <HashLink to='/New-Aashirwad/About#top'><h3 className='titlenames'>TERMS & CONDITIONS</h3></HashLink>
             </div>
             <div className="midline"></div>
             <div className='secondrectangle'>
@@ -32,8 +32,8 @@ const Mobile = () => {
     return(
         <div className='insidefooter'>
             <div className='firstmobrectangle'>
-            <Link to='/New-Aashirwad/About'><h3 className='titlenames'>About Us</h3></Link>
-            <Link to='/New-Aashirwad/About'><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></Link>
+            <HashLink to='/New-Aashirwad/About/#top'><h3 className='titlenames'>About Us</h3></HashLink>
+            <HashLink to='/New-Aashirwad/About/#top'><h3 className='titlenames'>PATHOLOGICAL EQUIPMENTS</h3></HashLink>
             <HashLink to='/New-Aashirwad/#msheet'><h3 className='titlenames'>CONTACT US</h3></HashLink>
             </div>
             <div className='secondrectangle'>
