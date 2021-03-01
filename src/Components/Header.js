@@ -41,7 +41,7 @@ const List = () => {
                 activeClassName='active ui button item itemname' 
                 style={{ color: 'rgba(123, 127, 140, 0.5)'  }} 
                 className="ui button item itemname"
-                to='/New-Aashirwad/#msheet'>
+                to='/New-Aashirwad/#Contact'>
                     Contact Us
             </NavHashLink>
                 { isMobile ? <div className="item mobbtn"> <Link to='/New-Aashirwad/Form'> <button className="ui button">

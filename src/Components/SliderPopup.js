@@ -43,7 +43,7 @@ const Popup = () => {
 
     return(
         <div> 
-                    <button className='ui button btnrea' onClick={handleOpen}>Book Now</button>
+                    <button id='Contact' className='ui button btnrea' onClick={handleOpen}>Book Now</button>
                     <Modal className='modal' open={isModal} onClose={handleClose}>
                         <div className='popup'>
                             <BsX size='35px' style={{marginLeft:'310px', cursor:'pointer'}} onClick={handleClose}/>
